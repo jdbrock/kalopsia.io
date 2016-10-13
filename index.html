@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Kalopsia</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:700|Roboto+Condensed:700" rel="stylesheet">
+        <style>
+            body {
+                background: #FB8C00;;
+            }
+
+            #parent {
+                padding: 5% 0;
+            }
+
+            #child {
+                color: white;
+                padding: 10% 0;
+                font-family: 'Raleway', sans-serif;
+                font-size: 16vw;
+                text-align: center;
+            }
+            .blinking-cursor {
+                font-weight: 100;
+                /*font-size: 30px;*/
+                color: #2E3D48;
+                opacity: 0.75;
+                -webkit-animation: 1s blink step-end infinite;
+                -moz-animation: 1s blink step-end infinite;
+                -ms-animation: 1s blink step-end infinite;
+                -o-animation: 1s blink step-end infinite;
+                animation: 1s blink step-end infinite;
+            }
+
+            @keyframes "blink" {
+                from, to {
+                    color: transparent;
+                }
+                50% {
+                    color: white;
+                }
+            }
+
+            @-moz-keyframes blink {
+                from, to {
+                    color: transparent;
+                }
+                50% {
+                    color: white;
+                }
+            }
+
+            @-webkit-keyframes "blink" {
+                from, to {
+                    color: transparent;
+                }
+                50% {
+                    color: white;
+                }
+            }
+
+            @-ms-keyframes "blink" {
+                from, to {
+                    color: transparent;
+                }
+                50% {
+                    color: white;
+                }
+            }
+
+            @-o-keyframes "blink" {
+                from, to {
+                    color: transparent;
+                }
+                50% {
+                    color: white;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="parent">
+            <div id="child">Kalopsia<span class="blinking-cursor">|</span></div>
+        </div>
+    </body>
+</html>
